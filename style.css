@@ -28,7 +28,7 @@ header {
     font-weight: 800;
     padding-left: 1rem;
     font-family: 'Press Start 2P', sans-serif;
-    z-index: 2; 
+    z-index: 5; 
     overflow-x: hidden;
 }
 
@@ -39,7 +39,7 @@ header {
 
 #Pic1 {
     width: 100%;
-    filter: blur(5px);
+    filter: blur(13px);
     z-index: 1; /* Lower z-index for the image */
     
 }
@@ -52,7 +52,7 @@ header {
     color: #FFF7AE;
     padding: 10px;
     font-size: 40px;
-    z-index: 3; /* Higher z-index for the text */
+    z-index: 2; /* Higher z-index for the text */
     background: rgba(0, 0, 0, 0.7);
 }
 #subhead {
@@ -68,31 +68,31 @@ header {
     background: rgba(0, 0, 0, 0.7);
     
 }
-body{
-}
 nav{
     display: flex;
     position: fixed;
     z-index: 10;
     font-family: 'Press Start 2P', sans-serif;
+    width:100%;
 }
 
-/*Styling logo*/
 .logo{
+    white-space: nowrap;
+    width:40%;
     padding:1vh 1vw;
     text-align: center;
+    padding-right:20%;
 }
 .logo img {
     height: 5rem;
     width: 5rem;
 }
-
-/*Styling Links*/
 .nav-links{
     display: flex;
     list-style: none; 
-    width:  60%;
-    padding: 0 0.7vw;
+    width:  50%;
+    padding: 0 3%;
+    white-space: nowrap;
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
@@ -108,7 +108,7 @@ nav{
     position: relative;
 }
 .nav-links li a:hover::before{
-    width: 80%;
+    width: 90%;
 }
 
 
@@ -156,7 +156,7 @@ nav{
 }
 
 /*Stying for small screens*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     nav{
         position: fixed;
         z-index: 3;
